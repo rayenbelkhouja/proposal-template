@@ -8,6 +8,7 @@
     box-shadow: 0px 0px 5px grey;
     padding: 2%;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -39,16 +40,12 @@ body{
     
 }
 
-.titles{
-    color: black;
-    font-weight: 700;
-    font-size: 20px;
-}
 
-.first-image{
+
+.image{
     width: 100%;
     border-radius: 10px;
-    max-width: 300px;
+    margin-top: 3%;
     
 }
 
@@ -56,62 +53,55 @@ span{
     font-weight: 700;
 }
 
-.details-conf{
-    display: flex;
-    row-gap: 20px;
-    flex-direction: column;
-}
-
-.points-fort-conf{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.consultez-container{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    background-color: #bbdeff;
-    width: 100%;
-    padding:20px 0;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.consultez{
-    font-family: 'Lato';
-    font-weight: 700;
-    color: white;
-    background-color: #037ef3;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: large;
-
-}
-
 .contact-container{
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
-    margin-top: 10px;
+   
+    
 }
 
 .contact-image{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
+  object-position: center;
 }
 
 .one-contact-conatainer{
     display: flex;
+    margin-top: 20px;
+    flex:1;
     flex-direction: column;
     row-gap: 10px;
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 1000px) {
     .full-email{
-        width: 100vw;
+       width: 70vw;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .full-email{
+       width: 80vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .full-email{
+       width: 100vw;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+}
+
+.text{
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
