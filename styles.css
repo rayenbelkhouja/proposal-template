@@ -1,0 +1,107 @@
+.full-email{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 45%;
+    min-width: 300px;
+    height: 100%;
+    color: white;
+    box-shadow: 0px 0px 5px grey;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 20px;
+    color: black;
+    font-family: 'Lato';
+
+}
+
+body{
+    background-color: #bbdeff;
+    display: flex;
+    justify-content: center;
+}
+
+.aiesec-image-container{
+    background-color: #037ef3;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  
+}
+.aiesec-logo{
+    width: 40%;
+    display: block;
+    margin: auto;
+    
+}
+
+
+
+.image{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 2%;
+    
+}
+
+span{
+    font-weight: 700;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+
+.contact-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  object-position: center;
+}
+
+.one-contact-conatainer{
+    display: flex;
+    margin-top: 20px;
+    flex:1;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .full-email{
+       width: 70vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .full-email{
+       width: 80vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .full-email{
+       width: 100vw;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+}
+
+.text{
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
