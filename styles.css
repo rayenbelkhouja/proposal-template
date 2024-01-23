@@ -61,6 +61,7 @@ span{
 .one-contact-conatainer{
     display: flex;
     margin-top: 20px;
+    margin-right: 20px;
     flex:1;
     flex-direction: column;
     row-gap: 10px;
